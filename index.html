@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - EcoSolo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <div class="logo">EcoSolo<span>.</span></div>
+            <p>Consciência e Lucratividade</p>
+        </header>
+
+        <main>
+            <section class="card-status">
+                <h3>Status do Solo</h3>
+                <div class="metrics">
+                    <div class="metric">
+                        <span class="label">Nutrientes</span>
+                        <span class="value">Ideal</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">Umidade</span>
+                        <span class="value alert">Baixa</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card-feedback">
+                <h3>Retroalimentação</h3>
+                <p>Insira os dados recentes para otimizar o uso de matérias-primas.</p>
+                <button class="btn-action" onclick="calcularFeedback()">Analisar Solo</button>
+                <div id="resultado" class="resultado-box">
+                    Aguardando análise...
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Agrinho 2026 - Tecnologia a Serviço da Terra</p>
+        </footer>
+    </div>
+
+    <script>
+        // Função simples para simular a retroalimentação no app
+        function calcularFeedback() {
+            const resultado = document.getElementById('resultado');
+            resultado.innerHTML = "<strong>Recomendação:</strong> Reduza o uso de nitrogênio em 15%. Adicione irrigação leve. Economia estimada: R$ 240/hectare.";
+            resultado.style.background = "rgba(0, 255, 200, 0.1)";
+        }
+    </script>
+</body>
+</html>
