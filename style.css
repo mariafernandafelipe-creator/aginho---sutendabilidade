@@ -1,0 +1,143 @@
+/* Configurações Gerais e Cores */
+:root {
+    --bg-blue: #0B132B;       /* Blue Escuro Espacial */
+    --text-light: #F4F7F6;     /* Light/Branco Tecnológico */
+    --cyan: #00EBFF;           /* Cyan Neon */
+    --teal: #00A896;           /* Teal Sustentável */
+    --card-bg: #1C2541;        /* Azul intermediário para os cards */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-blue);
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container do App (Estilo Celular/Tablet) */
+.app-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--bg-blue);
+    border: 1px solid rgba(0, 235, 255, 0.2);
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header .logo span {
+    color: var(--cyan);
+}
+
+header p {
+    font-size: 12px;
+    color: var(--cyan);
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+/* Cards Minimalistas */
+section {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(244, 247, 246, 0.05);
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+/* Métricas */
+.metrics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
+
+.value {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cyan);
+}
+
+.value.alert {
+    color: #FF5555; /* Alerta visual simples */
+}
+
+/* Botão Tecnológico */
+.btn-action {
+    width: 100%;
+    background-color: var(--teal);
+    color: var(--text-light);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.btn-action:hover {
+    background-color: var(--cyan);
+    color: var(--bg-blue);
+    box-shadow: 0 0 15px var(--cyan);
+}
+
+/* Caixa de Resposta da Retroalimentação */
+.resultado-box {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(244, 247, 246, 0.05);
+    font-size: 13px;
+    line-height: 1.4;
+    border-left: 3px solid var(--cyan);
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    opacity: 0.4;
+    margin-top: 20px;
+}
